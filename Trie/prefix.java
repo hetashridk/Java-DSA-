@@ -34,7 +34,7 @@ public class prefix {
         curr.eow = true;
     }
 
-    public static void Prefix(Node root, String ans){
+    public static void Prefix(Node root, String ans){   //TC:- O(L)
         // base case 1
         if(root == null){
             return;
