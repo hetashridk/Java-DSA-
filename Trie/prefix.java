@@ -33,6 +33,26 @@ public class prefix {
 
         curr.eow = true;
     }
+
+    public static void Prefix(Node root, String ans){
+        // base case 1
+        if(root == null){
+            return;
+        }
+
+        // base case 2
+        if(root.freq == 1){
+            System.out.println(ans);
+            return;
+        }
+
+        for(int i = 0; i < root.children.length; i++){
+            if(root.children[i] != null){
+                Prefix(root.children[i], ans + (char)(i + 'a'));
+            }
+        }
+    }
+
     public static void main(String[] args) {
         String words[] = {"zebra", "dog", "dove", "duck"};
 
@@ -40,5 +60,9 @@ public class prefix {
         for(int i = 0; i < words.length; i++){
             insert(words[i]);
         }
+
+         root.freq = -1;
+
+       Prefix(root, " ");
     }
 }
