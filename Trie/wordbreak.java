@@ -42,7 +42,7 @@ public class wordbreak {
         return curr.eow == true;
     }
 
-    public static boolean wordBreak(String key){
+    public static boolean wordBreak(String key){   //TC:- O(L)
         // base case
         if(key.length() == 0){
             return true;
