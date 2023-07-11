@@ -27,7 +27,7 @@ public class start_with {
         curr.eow = true;
     }
 
-      public static boolean startWith(String prefix){
+      public static boolean startWith(String prefix){   //O(L)
         Node curr = root;
 
         for(int level = 0; level < prefix.length(); level++){
