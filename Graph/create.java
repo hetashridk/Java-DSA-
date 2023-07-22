@@ -50,6 +50,7 @@ public class create {
 
 
         // to store neigbour of a vertex 
+        // TC:- O(constant)
         for(int i = 0; i < graph[2].size(); i++){  //store neigbour of 2
             Edge e = graph[2].get(i);
             System.out.println("2 -> " + e.dest);
