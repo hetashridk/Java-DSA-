@@ -5,7 +5,7 @@ public class selection_sort {
         // outer loop
         // for number of turns
         // number of turns = i
-        for(int i = 0; i < arr.length - 1; i++){
+        for(int i = 0; i < arr.length - 2; i++){
             int minpos = i;    //assume current position element = minimum element
 
             // inner loop
