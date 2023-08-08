@@ -2,22 +2,25 @@ import java.util.Arrays;
 
 public class shell_sort {
     public static void shellSort(int arr[]){
-        int g = arr.length / 2;
-        for(int gap = g; gap > 0; gap /= 2){
-            for(int j = gap; j < arr.length; j++){
-                int st = j;
-                for(int i = st - gap; arr[i] > arr[st] && i >= 0; i = i - gap ){
-                    int temp = arr[i];
-                    arr[i] = arr[st];
-                    arr[st] = temp;
-                    st = i;
+        int ig = arr.length / 2;
+        for(int gap = ig; gap > 0; gap /= 2){
+            for(int st = gap; st < arr.length; st++){
+                int start = st;
+                for(int jump = start - gap; arr[jump] > arr[start] && jump >= 0; jump = jump - gap ){
+                    int temp = arr[jump];
+                    arr[jump] = arr[start];
+                    arr[start] = temp;
+                    start = jump;
                 }
             }
         }
     }
     public static void main(String[] args) {
-        int arr[] = {29, 35, 4, 7, 49, 8, 2, 5};
+        int arr[] = {-1, 5, 2, 4, 8, 7};
         shellSort(arr);
-        System.out.println(Arrays.toString(arr));
+        
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + "  ");
+        }
     }   
 }
