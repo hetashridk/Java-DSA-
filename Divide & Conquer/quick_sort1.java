@@ -39,7 +39,7 @@ public class quick_sort1 {
 
 
     public static void main(String[] args) {
-        int arr[] = {2, -1, 4, 10, 1, 0, 40};
+        int arr[] = {310, 285, 179, 652, 351, 423, 861, 254, 450, 520};
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
