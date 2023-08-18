@@ -52,7 +52,7 @@ public class DetectCycle {
 
     }
 
-public static boolean detectCycle(ArrayList<Edge>[] graph){
+public static boolean detectCycle(ArrayList<Edge>[] graph){  //TC:- O(V + E)
     boolean visited[] = new boolean[graph.length];
 
     // if cycle in either of the components/parts
