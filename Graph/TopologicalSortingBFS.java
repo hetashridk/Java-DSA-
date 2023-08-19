@@ -1,6 +1,5 @@
-// Topological Sort using BFS
+// Topological Sort using BFS - Kahn's Algo
 
-import java.security.interfaces.EdECKey;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
