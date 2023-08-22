@@ -49,8 +49,10 @@ public class BellmanFord {
         }
 
         int V = graph.length;
-
+        // O(V*E)
+        // algo:- O(V)
         for(int i = 0; i < V - 1; i++){
+            // edges:- O(E)
             for(int j = 0; j < graph.length; j++){
                 for(int k = 0; k <  graph[j].size(); k++){
                     Edge e =  graph[j].get(k);
