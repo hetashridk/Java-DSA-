@@ -19,7 +19,7 @@ public class ConnectingCities {
         }
     }
 
-    public static int connectingCities(int[][] cities){
+    public static int connectingCities(int[][] cities){   //TC:- O(ElogE) => same as Prim's Algo
         boolean visited[] = new boolean[cities.length];
         PriorityQueue<Edge> pq = new PriorityQueue<>();
 
