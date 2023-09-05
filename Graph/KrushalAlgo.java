@@ -68,12 +68,12 @@ public class KrushalAlgo {
 
     public static int krushal(ArrayList<Edge> edges, int V){
         init();
-        Collections.sort(edges);
+        Collections.sort(edges);  //TC:- O(ElogE)
 
         int mstcost = 0;
         int count = 0;
 
-        for(int i = 0; count < V - 1; i++){
+        for(int i = 0; count < V - 1; i++){   //TC:- O(logV)
             Edge e = edges.get(i);
 
             int parentA = find(e.src);
@@ -87,6 +87,8 @@ public class KrushalAlgo {
         }
 
         return mstcost;
+
+        // so TC:- O(ElogE + logV)
     }
     public static void main(String[] args) {
         int V = 4;
