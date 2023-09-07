@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class PrimAlgo {
 
-      public static class Edge{
+    public static class Edge{
         int src;
         int dest;
         int wt;
