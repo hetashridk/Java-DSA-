@@ -1,6 +1,6 @@
 public class FibonnaciTabulation{
 
-    public static int fib(int n){
+    public static int fib(int n){   //TC:- O(n)
         int f[] = new int[n + 1];
 
         f[0] = 0;
