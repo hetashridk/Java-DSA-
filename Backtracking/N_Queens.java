@@ -65,7 +65,7 @@ public class N_Queens {
     // to count number of ways
     static int count = 0;
     public static void main(String args[]){
-        int n = 2;
+        int n = 4;
         char board[][] = new char[n][n];
 
         // intialize board
